@@ -343,4 +343,31 @@ export default function Home() {
                       {/* Social stats */}
                       <div className="flex items-center justify-between pt-2 border-t border-gray-200 dark:border-gray-700">
                         <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-                          <span
+                                              <span className="flex items-center gap-1">
+                            <Heart className="w-4 h-4" />
+                            {card.stats.likes}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <MessageCircle className="w-4 h-4" />
+                            {card.stats.comments}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Share2 className="w-4 h-4" />
+                            {card.stats.shares}
+                          </span>
+                        </div>
+                        <Button size="sm" variant="outline">
+                          Enroll
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
+      </div>
+    </Layout>
+  );
+}
