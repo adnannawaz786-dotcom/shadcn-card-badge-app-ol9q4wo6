@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { Button } from '../components/ui/button';
 import { Star, Heart, MessageCircle, Share2, Calendar, MapPin, Clock, Users, Award, Zap, Shield, Sparkles } from 'lucide-react';
 
 const cardVariants = {
@@ -356,9 +355,7 @@ export default function Home() {
                             {card.stats.shares}
                           </span>
                         </div>
-                        <Button size="sm" variant="outline">
-                          Enroll
-                        </Button>
+                   
                       </div>
                     </CardContent>
                   </Card>
